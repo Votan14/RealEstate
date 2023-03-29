@@ -939,6 +939,10 @@ svg {
   padding-left: 40px;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .title {
   font-weight: 900;
   font-size: 32px;
@@ -1921,6 +1925,27 @@ svg {
   cursor: pointer;
 }
 
+.table__img img {
+  border-radius: 50%;
+}
+
+.table__img::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #525a65;
+  bottom: 0;
+  right: 0;
+}
+
+.table__name {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2621,6 +2646,113 @@ svg {
   font-size: 14.4488px;
   margin-bottom: 3px;
   color: #0d263b;
+}
+
+.rieltor__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+}
+
+.rieltor__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 68%;
+          flex: 0 1 68%;
+}
+
+.rieltor__name {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #0d263b;
+}
+
+.rieltor__link {
+  font-size: 14px;
+  color: #696969;
+}
+
+.rieltor__work {
+  font-size: 14px;
+  color: #696969;
+  margin-bottom: 23px;
+}
+
+.rieltor__blue-text {
+  min-width: 70px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #225aa4;
+}
+
+.rieltor__grey-text {
+  font-size: 14px;
+  color: #696969;
+}
+
+.rieltor__phone a {
+  font-weight: 700;
+  font-size: 12.6427px;
+  text-decoration-line: underline;
+  color: #225aa4;
+}
+
+.rieltor__about-title {
+  margin-bottom: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #0d263b;
+}
+
+.rieltor__about-text {
+  font-size: 14px;
+  color: #696969;
+}
+
+.rieltor__social-link {
+  padding: 8px 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.rieltor__social-link:hover {
+  background: #e5ebf2;
+}
+
+.reviews__img img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.reviews__name {
+  font-weight: 900;
+  font-size: 16px;
+  color: #0d263b;
+}
+
+.reviews__date {
+  font-weight: 500;
+  font-size: 14px;
+  color: #696969;
+}
+
+.reviews__body {
+  font-weight: 500;
+  font-size: 14px;
+  color: #696969;
 }
 
 @media (max-width: 61.99875em) {
