@@ -575,7 +575,7 @@ li {
   padding: 20px 50px;
   background: #225aa4;
   border-radius: 16px;
-  width: 379px;
+  max-width: 379px;
   display: inline-block;
   text-align: center;
 }
@@ -1421,6 +1421,8 @@ svg {
           align-items: center;
   gap: 37px;
   margin-bottom: 173px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .enter__logo {
@@ -1443,6 +1445,8 @@ svg {
           align-items: center;
   gap: 36px;
   margin-bottom: 28px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .enter__title {
@@ -3169,6 +3173,10 @@ svg {
     max-width: none;
   }
 
+  .blue-button {
+    width: auto;
+  }
+
   .section {
     padding-left: 15px;
     padding-right: 15px;
@@ -3274,6 +3282,20 @@ svg {
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
     padding: 30px;
+  }
+
+  .enter__top {
+    gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .enter__title-box {
+    gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .enter__input-box.flex {
