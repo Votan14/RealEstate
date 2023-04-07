@@ -665,6 +665,12 @@
             }));
         }
     }), 0);
+    if (document.getElementById("click-show") && "click-btn") document.getElementById("click-btn").addEventListener("click", (function() {
+        document.getElementById("click-show").classList.toggle("shown");
+    }));
+    if (document.getElementById("click-show") && "close-nav") document.getElementById("close-nav").addEventListener("click", (function() {
+        document.getElementById("click-show").classList.remove("shown");
+    }));
     window["FLS"] = true;
     isWebp();
     tabs();

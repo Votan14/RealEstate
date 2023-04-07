@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230405154234">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230407174107">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta meta name="viewport" content="width=device-width, user-scalable=no" />
@@ -15,48 +15,161 @@
 <body>
 	<div class="wrapper">
 		<div class="main-block">
-
+			<div class="navbar" id="click-show">
+				<svg id="close-nav">
+					<use xlink:href="img/icons/icons.svg#close"></use>
+				</svg>
+				<div class="navbar__logo">
+					<img src="img/icons/logo.svg" alt="">
+				</div>
+				<ul class="navbar__menu">
+					<li class="navbar__menu-item ">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#main"></use>
+						</svg>
+						<a class="navbar__menu-text" href="main.html">
+							Головна
+						</a>
+					</li>
+					<li class="navbar__menu-item ">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#house"></use>
+						</svg>
+						<a class="navbar__menu-text" href="object_estate.html">
+							Об’єкти нерухомості
+						</a>
+					</li>
+					<li class="navbar__menu-item ">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#orders"></use>
+						</svg>
+						<a class="navbar__menu-text" href="orders.html">
+							Заявки
+						</a>
+					</li>
+					<li class="navbar__menu-item active">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#monitor"></use>
+						</svg>
+						<a class="navbar__menu-text" href="monitor.html">
+							Моніторинг
+						</a>
+						<p class="green-circle">
+							13
+						</p>
+					</li>
+					<li class="navbar__menu-item">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#stat"></use>
+						</svg>
+						<a class="navbar__menu-text" href="stat-agent.html">
+							Статистика
+						</a>
+					</li>
+					<li class="navbar__menu-item ">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#partner"></use>
+						</svg>
+						<a class="navbar__menu-text" href="my_orders.html">
+							Мої Угоди
+						</a>
+					</li>
+				</ul>
+				<p class="navbar__other-text">
+					Інше
+				</p>
+				<ul class="navbar__menu">
+					<li class="navbar__menu-item">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#client"></use>
+						</svg>
+						<a class="navbar__menu-text" href="clients.html">
+							Клієнти
+						</a>
+					</li>
+					<li class="navbar__menu-item">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#agency"></use>
+						</svg>
+						<a class="navbar__menu-text" href="agency.html">
+							Aгенство
+						</a>
+					</li>
+					<li class="navbar__menu-item">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#sms"></use>
+						</svg>
+						<a class="navbar__menu-text" href="chat.html">
+							Повідомлення
+						</a>
+					</li>
+					<li class="navbar__menu-item">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#settings"></use>
+						</svg>
+						<a class="navbar__menu-text" href="name.html">
+							Налаштування
+						</a>
+					</li>
+				</ul>
+				<div class="navbar__menu-item">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#hear"></use>
+					</svg>
+					<a class="navbar__menu-text" href="help.html">
+						Підтримка
+					</a>
+				</div>
+			</div>
 			<div class="body-main">
 				<header class="header">
 					<div class="header__container">
 						<div class="header__box">
 							<div class="header__left">
 								<div class="header__menu-box">
-									<svg>
+									<svg class="burger-btn" id="click-btn">
 										<use xlink:href="img/icons/icons.svg#menu"></use>
 									</svg>
 									<p class="header__page-name">
-										Головна
+										Моніторинг
 									</p>
 								</div>
 							</div>
 							<div class="header__right">
 								<div class="header__input-box">
 									<input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Пошук" class="input">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#search"></use>
-									</svg>
+									<a href="search.html">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#search"></use>
+										</svg>
+									</a>
 								</div>
-								<a href="#!" class="header__menu-button">
+								<a href="object.html" class="header__menu-button">
 									Фільтр
 								</a>
 								<div class="header__icon-box">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#crown"></use>
-									</svg>
+									<a href="create_agency.html">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#crown"></use>
+										</svg>
+									</a>
 								</div>
 								<div class="header__icon-box">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#bell"></use>
-									</svg>
+									<a href="stat-estate.html">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#bell"></use>
+										</svg>
+									</a>
 									<p class="header__number-yellow">
 										12
 									</p>
 								</div>
 								<div class="header__icon-box">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#sms"></use>
-									</svg>
+									<a href="invite.html">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#sms"></use>
+										</svg>
+									</a>
 									<p class="header__number-green">
 										10
 									</p>
@@ -74,9 +187,11 @@
 										</p>
 									</div>
 									<div class="header__user-arrow">
-										<svg>
-											<use xlink:href="img/icons/icons.svg#down"></use>
-										</svg>
+										<a href="rieltor.html">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#down"></use>
+											</svg>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -150,11 +265,11 @@
 								<button type="submit" class="button blue-element">Розширені налаштування</button>
 							</div>
 							<div class="input__label relative ">
-								<button type="submit" class="button blue-element">
+								<a href="search.html" class="button blue-element">
 									<svg class="white-icon">
 										<use xlink:href="img/icons/icons.svg#search"></use>
 									</svg>
-								</button>
+								</a>
 							</div>
 						</div>
 						<div class="type-object__title title">
@@ -1066,7 +1181,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230405154234"></script>
+	<script src="js/app.min.js?_v=20230407174107"></script>
 </body>
 
 </html>

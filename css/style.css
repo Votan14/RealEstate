@@ -576,6 +576,8 @@ li {
   background: #225aa4;
   border-radius: 16px;
   width: 379px;
+  display: inline-block;
+  text-align: center;
 }
 
 .blue-text {
@@ -628,7 +630,7 @@ path {
 }
 
 .section {
-  padding: 50px 20px;
+  padding: 50px;
 }
 
 .section.enter {
@@ -1142,6 +1144,10 @@ svg {
   gap: 40px;
 }
 
+.header__menu-box svg {
+  cursor: pointer;
+}
+
 .header__page-name {
   font-weight: 900;
   font-size: 32px;
@@ -1179,7 +1185,7 @@ svg {
   border-radius: 16px;
 }
 
-.header__input-box svg {
+.header__input-box a {
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0, -50%);
@@ -1251,14 +1257,28 @@ svg {
   color: #717579;
 }
 
+#close-nav {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  z-index: 10;
+  cursor: pointer;
+}
+
 .navbar {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 30%;
           flex: 0 1 30%;
   max-width: 350px;
-  padding-left: 27px;
-  padding-right: 27px;
+  padding: 25px;
   background: #ffffff;
+  display: none;
+  position: absolute;
+  z-index: 5;
+}
+
+.navbar.shown {
+  display: block;
 }
 
 .navbar__logo {
@@ -1556,7 +1576,7 @@ svg {
 }
 
 .main-page__hashtag {
-  padding: 15px;
+  padding: 5px;
   font-size: 32px;
   color: #ffffff;
   border-radius: 8.24348px;
@@ -2578,10 +2598,6 @@ svg {
   padding-right: 100px;
 }
 
-.detail svg {
-  fill: #225aa4;
-}
-
 .detail__title {
   font-weight: 900;
   font-size: 21.6733px;
@@ -3084,10 +3100,6 @@ svg {
     padding: 20px;
   }
 
-  .navbar {
-    display: none;
-  }
-
   .main-page__button {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
@@ -3155,6 +3167,11 @@ svg {
 @media (max-width: 47.99875em) {
   [class*=__container] {
     max-width: none;
+  }
+
+  .section {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .dfe {
